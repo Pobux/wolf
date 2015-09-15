@@ -6,17 +6,14 @@ Petit script pour transférer et tester sur malt ton script C.
 
 Bonus, configure ton ssh_config:
 
-<code>
-cd ~/.ssh/
-touch config
-</code>
+<code>cd ~/.ssh/</code><br/>
+<code>touch config</code>
 
 Dans config
 
 <code>
-    
+
     Host zeta
-    
         HostName zeta2.labunix.uqam.ca
         User [ton user]
 
