@@ -1,6 +1,9 @@
-#makefile (avec makefile si possible)
-#cat ssh, compilation, printing des process
-tonpass="XXXXXXX"
-tonfichier="myfile.out"
-cat $tonfichier | sshpass -p$tonpass ssh -o StrictHostKeyChecking=no cf491141@malt.labunix.uqam.ca "cat > $tonfichier; chmod a+x $tonfichier; ./$tonfichier"
+#! /bin/bash
 
+user="$1"
+pass="$2"
+infile="$3"
+host=malt.labunix.uqam.ca
+tmp=/home/$user/tmp/
+outsuffix=.out
+cat $infile | sshpass -p $pass ssh $user@$host "mkdir -p $tmp;cat > $tmp$infile;gcc $tmp$infile -Wall -o $tmp$infile$outsuffix; $tmp$infile$outsuffix; rm $tmp$infile $tmp$infile$outsuffix;"
