@@ -8,9 +8,7 @@ Bonus, configure ton ssh_config:
 
 <code>cd ~/.ssh/</code><br/>
 <code>touch config</code>
-
 Dans config
-
 <code>
 
     Host zeta
@@ -20,6 +18,7 @@ Dans config
     Host malt
     
         HostName malt.labunix.uqam.ca
-        User [ton user]</code>
+        User [ton user]
+</code>
 
 Maintenant tu n'as qu'à tapper <code>ssh malt</code> ou <code> ssh zeta</code> pour rentrer en ssh sur le réseau.
