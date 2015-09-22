@@ -9,6 +9,7 @@ Bonus, configure ton ssh_config:
 <code>cd ~/.ssh/</code><br/>
 <code>touch config</code>
 Dans config
+<br>
 <code>
 
     Host zeta
