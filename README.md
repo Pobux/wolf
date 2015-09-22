@@ -2,7 +2,7 @@ tranfert tes shits sur malt rapido.
 Petit script pour transférer et tester sur malt ton script C.
 
 1. Mets le script wolf.sh dans ton répertoire C
-2. Tappe <code>./wolf.sh
+2. Tappe <code>./wolf.sh</code>
 
 Bonus, configure ton ssh_config:
 
